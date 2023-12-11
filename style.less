@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Montserrat-Regular-400;
+  src: url("./fonts/Montserrat-Regular-400.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Regular-700;
+  src: url("./fonts/Montserrat-Bold-700.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Regular-800;
+  src: url("./fonts/Montserrat-ExtraBold-800.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Regular-900;
+  src: url("./fonts/Montserrat-Black-900.ttf");
+}
+
+body {
+  background: #140132;
+  color: #FCFCFD;
+  font-family: Montserrat-Regular-400, sans-serif;
+}
+
+.container {
+  max-width: 1512px;
+  padding: 20px 80px 120px 80px;
+  margin: 0 auto;
+
+  .header {
+    display: flex;
+    align-items: center;
+
+    .header-menu ul {
+      display: flex;
+      margin: 0 114px;
+
+      li {
+        list-style: none;
+        cursor: pointer;
+        color: #5E636E;
+        margin-right: 36px;
+        font-size: 16px;
+      }
+
+      .li-green {
+        color: #01FFC2;
+        margin-right: 0;
+      }
+    }
+
+    .price {
+      display: flex;
+
+      .price-element {
+        display: flex;
+        margin-right: 20px;
+
+        .price-element-img {
+          margin-right: 5px;
+        }
+
+        .price-element-info {
+          :first-child {
+            font-size: 8px;
+            line-height: 10px;
+          }
+
+          :last-child {
+            font-family: Montserrat-Regular-700, sans-serif;
+            font-size: 16px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+
+            span {
+              margin-left: 2px;
+            }
+          }
+        }
+      }
+    }
+
+    .audit {
+      display: flex;
+      background: #7156FD33;
+      padding: 12px 22px;
+      border-radius: 30px;
+      align-items: center;
+
+      .audit-logo {
+        margin-right: 9px;
+      }
+
+      .audit-name {
+        .audit-name-text {
+          display: flex;
+          align-items: center;
+          font-size: 8px;
+          line-height: 10px;
+          letter-spacing: 0.27em;
+          margin-bottom: 6.6px;
+
+          svg {
+            margin-right: 6px;
+          }
+        }
+
+      }
+    }
+
+    .language {
+      margin-left: 20px;
+      cursor: pointer;
+      span {
+        color: #5E636E;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+
